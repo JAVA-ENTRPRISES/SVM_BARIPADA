@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SVM International School</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      .hover-card {
+        transition: all 0.4s ease;
+      }
+      .hover-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <div id="schoolinfo"></div>
+    <div id="header"></div>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section
+        class="bg-gradient-to-r from-indigo-700 to-blue-600 text-white py-20 text-center"
+      >
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Academic Excellence</h1>
+
+        <p class="text-lg text-indigo-100">
+          Empowering Students Through Knowledge & Innovation
+        </p>
+      </section>
+
+      <!-- ================= ACADEMIC APPROACH ================= -->
+      <section class="py-20 bg-white">
+        <div
+          class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+        >
+          <div>
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">
+              Our Learning Approach
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+              We follow a concept-based and student-focused teaching methodology
+              that encourages curiosity, creativity, and critical thinking.
+            </p>
+
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-indigo-600 mt-1"></i>
+                Smart classroom teaching
+              </li>
+
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-indigo-600 mt-1"></i>
+                Project-based learning
+              </li>
+
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-indigo-600 mt-1"></i>
+                Practical & experimental activities
+              </li>
+
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-indigo-600 mt-1"></i>
+                Continuous evaluation system
+              </li>
+            </ul>
+          </div>
+
+          <img src="assets/images/class.avif" class="rounded-xl shadow-xl" />
+        </div>
+      </section>
+
+      <!-- ================= CURRICULUM FLOW ================= -->
+      <section class="py-20 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center mb-12">
+            Curriculum Structure
+          </h2>
+
+          <div class="space-y-8 border-l-4 border-indigo-600 pl-8">
+            <div>
+              <h3 class="font-semibold text-lg">Pre-Primary</h3>
+              <p class="text-gray-600">
+                Activity-based and play-way learning methods.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-lg">Primary (I–V)</h3>
+              <p class="text-gray-600">
+                Strong foundation in language, mathematics, and environmental
+                studies.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-lg">Middle (VI–VIII)</h3>
+              <p class="text-gray-600">
+                Concept clarity through experiments and project work.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-lg">Secondary (IX–X)</h3>
+              <p class="text-gray-600">
+                Exam-focused preparation with analytical thinking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SUBJECT CARDS ================= -->
+      <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl font-bold text-center mb-12">Core Subjects</h2>
+
+          <div class="grid md:grid-cols-4 gap-8">
+            <div class="hover-card bg-gray-50 p-6 rounded-xl text-center">
+              <i
+                class="fa-solid fa-calculator text-indigo-600 text-4xl mb-4"
+              ></i>
+              <h3 class="font-semibold">Mathematics</h3>
+            </div>
+
+            <div class="hover-card bg-gray-50 p-6 rounded-xl text-center">
+              <i class="fa-solid fa-flask text-indigo-600 text-4xl mb-4"></i>
+              <h3 class="font-semibold">Science</h3>
+            </div>
+
+            <div class="hover-card bg-gray-50 p-6 rounded-xl text-center">
+              <i class="fa-solid fa-language text-indigo-600 text-4xl mb-4"></i>
+              <h3 class="font-semibold">Languages</h3>
+            </div>
+
+            <div class="hover-card bg-gray-50 p-6 rounded-xl text-center">
+              <i
+                class="fa-solid fa-laptop-code text-indigo-600 text-4xl mb-4"
+              ></i>
+              <h3 class="font-semibold">Computer</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ASSESSMENT ================= -->
+      <section class="py-20 bg-indigo-600 text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-4">Assessment & Evaluation</h2>
+
+          <p class="text-indigo-100">
+            We follow continuous and comprehensive evaluation including unit
+            tests, assignments, projects, practicals, and final examinations.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= ACADEMIC SUPPORT ================= -->
+      <section class="py-20 bg-gray-900 text-white text-center">
+        <h2 class="text-3xl font-bold mb-4">Student Academic Support</h2>
+
+        <p class="mb-6 text-gray-300">
+          Remedial classes, mentoring sessions, and doubt-clearing programs are
+          conducted to ensure every student achieves success.
+        </p>
+
+        <a
+          href="contact.html"
+          class="bg-indigo-600 px-6 py-3 rounded hover:bg-indigo-700"
+        >
+          Contact Academic Office
+        </a>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

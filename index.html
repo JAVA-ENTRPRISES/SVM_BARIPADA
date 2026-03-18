@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SVM INTERNATIONAL SCHOOL</title>
+  <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-50">
+
+  <div id="schoolinfo"></div>
+  <div id="header"></div>
+
+  <!-- ================= HERO / CAROUSEL ================= -->
+  <section class="relative w-full h-[380px] md:h-[550px] overflow-hidden">
+
+    <img id="carouselImage" src="assets/images/school.avif"
+      class="absolute inset-0 w-full h-full object-cover"/>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+
+    <!-- Text -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+      <h2 id="carouselTitle" class="text-3xl md:text-5xl font-bold mb-3">
+        Welcome to SVM International School
+      </h2>
+      <p id="carouselSubtitle" class="text-lg md:text-2xl opacity-90 max-w-2xl">
+        Empowering Students for a Bright Future
+      </p>
+    </div>
+
+    <!-- Buttons -->
+    <button onclick="prevSlide()" class="absolute top-1/2 left-4 -translate-y-1/2 bg-black/40 p-3 rounded-full text-white hover:bg-black/70">
+      ❮
+    </button>
+    <button onclick="nextSlide()" class="absolute top-1/2 right-4 -translate-y-1/2 bg-black/40 p-3 rounded-full text-white hover:bg-black/70">
+      ❯
+    </button>
+  </section>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">
+            About Our School
+          </h2>
+          <p class="text-gray-600 mb-4">
+            SVM International School is committed to imparting quality education in a safe, disciplined, and nurturing environment. The school emphasizes academic excellence, strong moral values, and holistic personality development. With highly qualified faculty and modern infrastructure, we empower students to become confident, responsible, and successful individuals prepared to face future challenges.
+          </p>
+          <a href="about.html"
+            class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition mt-4">
+            Read More
+          </a>
+        </div>
+
+        <div>
+          <img src="assets/images/campus.jpg"
+            class="rounded-2xl shadow-md w-full"
+            alt="School Campus"/>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY CHOOSE US ================= -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+          Why Choose Our School
+        </h2>
+        <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
+          We are committed to shaping future leaders by providing a supportive environment that encourages academic excellence, creativity, discipline, and overall personality development.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-14">
+
+        <!-- Card -->
+        <div class="bg-white p-6 rounded-2xl shadow text-center hover:shadow-lg transition">
+          <i class="fa-solid fa-graduation-cap text-4xl w-14 h-14 mx-auto flex items-center justify-center mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Qualified Teachers</h3>
+          <p class="text-gray-600 text-sm">Our highly qualified and experienced teachers are committed to nurturing every student’s potential through personalized guidance, innovative teaching, and continuous support.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow text-center hover:shadow-lg transition">
+          <i class="fa-solid fa-chalkboard-user text-4xl w-14 h-14 mx-auto flex items-center justify-center mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Smart Classrooms</h3>
+          <p class="text-gray-600 text-sm">Our smart classrooms integrate advanced technology and interactive tools to create an engaging and effective learning experience for every student.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow text-center hover:shadow-lg transition">
+          <i class="fa-solid fa-shield-halved text-4xl w-14 h-14 mx-auto flex items-center justify-center mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Safe Campus</h3>
+          <p class="text-gray-600 text-sm">Our campus provides a safe, secure, and disciplined environment with continuous supervision, ensuring the well-being and protection of every student.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow text-center hover:shadow-lg transition">
+          <i class="fa-solid fa-user-graduate text-4xl w-14 h-14 mx-auto flex items-center justify-center mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Holistic Development</h3>
+          <p class="text-gray-600 text-sm">We focus on the overall development of students by nurturing their academic excellence, creative talents, physical fitness, and strong character.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow text-center hover:shadow-lg transition">
+          <i class="fa-solid fa-school text-4xl w-14 h-14 mx-auto flex items-center justify-center mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Modern Infrastructure</h3>
+          <p class="text-gray-600 text-sm">Our campus features modern infrastructure with well-equipped classrooms, advanced laboratories, and excellent facilities that support effective and engaging learning.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow text-center hover:shadow-lg transition">
+          <i class="fa-solid fa-trophy text-4xl w-14 h-14 mx-auto flex items-center justify-center mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Excellent Results</h3>
+          <p class="text-gray-600 text-sm">Our students consistently achieve outstanding academic results, reflecting our commitment to excellence in education and student success.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= JS ================= -->
+  <script>
+    const slides = [
+      {
+        image: "assets/images/school.avif",
+        title: "Welcome to SVM International School",
+        subtitle: "Empowering Students for a Bright Future"
+      },
+      {
+        image: "assets/images/sc2.jpg",
+        title: "Quality Education",
+        subtitle: "Building Confidence and Knowledge"
+      },
+      {
+        image: "assets/images/sc3.webp",
+        title: "Modern Classrooms",
+        subtitle: "A Better Environment for Learning"
+      }
+    ];
+
+    let index = 0;
+
+    function updateSlide() {
+      document.getElementById("carouselImage").src = slides[index].image;
+      document.getElementById("carouselTitle").innerText = slides[index].title;
+      document.getElementById("carouselSubtitle").innerText = slides[index].subtitle;
+    }
+
+    function nextSlide() {
+      index = (index + 1) % slides.length;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + slides.length) % slides.length;
+      updateSlide();
+    }
+
+    setInterval(nextSlide, 3000);
+  </script>
+<!-- footer -->
+
+<div id="footer"></div>
+<script src="js/main.js"></script>
+</body>
+</html>

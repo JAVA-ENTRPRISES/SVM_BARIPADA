@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SVM International School</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      .facility-card {
+        transition: all 0.4s ease;
+        backdrop-filter: blur(10px);
+      }
+      .facility-card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <div id="header"></div>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section
+        class="relative h-[380px] flex items-center justify-center text-white"
+      >
+        <img
+          src="assets/images/campus.jpg"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-black/70"
+        ></div>
+
+        <div class="relative text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-3">
+            World-Class Facilities
+          </h1>
+          <p class="text-lg text-gray-200">
+            Modern Infrastructure for Academic Excellence
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= INTRO ================= -->
+      <section class="py-20 bg-white">
+        <div
+          class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+        >
+          <div>
+            <h2 class="text-3xl font-bold mb-8 text-gray-800">
+              Learning Beyond Classrooms
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+              Our campus is designed to provide students with a safe,
+              innovative, and inspiring environment that supports both academic
+              and co-curricular excellence.
+            </p>
+
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                Digitally enabled classrooms
+              </li>
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                Well-equipped laboratories
+              </li>
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                Safe campus with CCTV
+              </li>
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                Transport & medical support
+              </li>
+            </ul>
+          </div>
+
+          <img src="assets/images/facility.jpg" class="w-full h-[420px] object-cover rounded-xl shadow-xl mb-10" />
+        </div>
+      </section>
+
+      <!-- ================= FACILITY GRID ================= -->
+      
+<section class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-3">Our Infrastructure</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Our campus provides world-class infrastructure with modern classrooms,
+        laboratories, sports facilities, and advanced technology to support
+        student learning and development.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Smart Classrooms -->
+      <div class="facility-card bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="assets/images/classroom.jpg" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold mb-2">Smart Classrooms</h3>
+          <p class="text-gray-600 text-sm">
+            Interactive smart boards and digital teaching tools enhance learning experience.
+          </p>
+        </div>
+      </div>
+
+      <!-- Library -->
+      <div class="facility-card bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="assets/images/library.jpg" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold mb-2">Library</h3>
+          <p class="text-gray-600 text-sm">
+            A rich collection of books, journals, and digital learning resources.
+          </p>
+        </div>
+      </div>
+
+      <!-- Computer Lab -->
+      <div class="facility-card bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="assets/images/computer-lab.jpg" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold mb-2">Computer Lab</h3>
+          <p class="text-gray-600 text-sm">
+            Modern computer systems with latest software for practical learning.
+          </p>
+        </div>
+      </div>
+
+      <!-- Science Labs -->
+      <div class="facility-card bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="assets/images/science-lab.jpg" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold mb-2">Science Labs</h3>
+          <p class="text-gray-600 text-sm">
+            Fully equipped Physics, Chemistry, and Biology laboratories.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sports -->
+      <div class="facility-card bg-white rounded-2xl overflow-hidden shadow-lg">
+        <img src="assets/images/sports.jpg" class="w-full h-48 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-xl font-semibold mb-2">Sports Facilities</h3>
+          <p class="text-gray-600 text-sm">
+            Indoor and outdoor sports facilities for physical development.
+          </p>
+        </div>
+      </div>
+
+      <!-- Auditorium -->
+<div class="facility-card bg-white rounded-2xl overflow-hidden shadow-lg">
+  <img src="assets/images/auditorium.jpg" class="w-full h-48 object-cover">
+  <div class="p-6 text-center">
+    <h3 class="text-xl font-semibold mb-2">Auditorium</h3>
+    <p class="text-gray-600 text-sm">
+      A spacious and fully equipped auditorium for events, seminars, and cultural programs.
+    </p>
+  </div>
+</div>
+
+    </div>
+
+  </div>
+</section>
+
+      <!-- ================= STATS ================= -->
+      <section class="py-20 bg-blue-600 text-white text-center">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-4xl font-bold">20+</h3>
+            <p>Smart Classrooms</p>
+          </div>
+
+          <div>
+            <h3 class="text-4xl font-bold">5+</h3>
+            <p>Laboratories</p>
+          </div>
+
+          <div>
+            <h3 class="text-4xl font-bold">24/7</h3>
+            <p>Security</p>
+          </div>
+
+          <div>
+            <h3 class="text-4xl font-bold">10+</h3>
+            <p>Transport Routes</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SAFETY CTA ================= -->
+      <section class="py-20 bg-gray-900 text-white text-center">
+        <h2 class="text-3xl font-bold mb-4">Safe & Secure Campus</h2>
+
+        <p class="mb-6 text-gray-300">
+          Our campus follows strict safety measures, CCTV monitoring, trained
+          staff, and medical assistance.
+        </p>
+
+        <a
+          href="contact.html"
+          class="bg-blue-600 px-6 py-3 rounded hover:bg-blue-700"
+        >
+          Contact School Office
+        </a>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .nav-link.active {
+        color: #fa151d; /* yellow-400 */
+        font-weight: 700;
+        border-bottom: 2px solid #15c4fa;
+        padding-bottom: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-white shadow-md sticky w-full top-0 left-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="text-2xl font-bold">
+          <!-- <img src="images/logoo.png" alt="School Logo" class="h-16 w-48 inline-block mr-2"/> -->
+          <h1 class="text-xl font-bold">SVM INTERNATIONAL SCHOOL</h1>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex gap-10 text-lg font-medium">
+          <!-- Menu Item -->
+          <div class="relative group">
+            <a
+              href="index.html"
+              class="nav-link hover:text-[#fa151d] transition"
+              >Home</a
+            >
+          </div>
+
+          <div class="relative group">
+            <a
+              href="about.html"
+              class="nav-link hover:text-[#fa151d] transition"
+              >About</a
+            >
+            <div
+              class="absolute left-0 mt-2 bg-white shadow-lg rounded-md p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition w-48"
+            >
+              <a
+                href="about.html#vision"
+                class="block py-2 px-2 hover:bg-gray-200 rounded"
+                >Vision</a
+              >
+              <a
+                href="about.html#mission"
+                class="block py-2 px-2 hover:bg-gray-200 rounded"
+                >Mission</a
+              >
+              <a
+                href="about.html#principal"
+                class="block py-2 px-2 hover:bg-gray-200 rounded"
+                >Principal Message</a
+              >
+            </div>
+          </div>
+
+          <a
+            href="admission.html"
+            class="nav-link hover:text-[#fa151d] transition"
+            >Admission</a
+          >
+          <a
+            href="academic.html"
+            class="nav-link hover:text-[#fa151d] transition"
+            >Academic</a
+          >
+          <a
+            href="facility.html"
+            class="nav-link hover:text-[#fa151d] transition"
+            >Facility</a
+          >
+          <a
+            href="mandatory-disclosure.html"
+            class="nav-link hover:text-[#fa151d] transition"
+            >Mandatory Disclosure</a
+          >
+          <a
+            href="gallery.html"
+            class="nav-link hover:text-[#fa151d] transition"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="nav-link hover:text-[#fa151d] transition"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile Button -->
+        <button onclick="openMenu()" class="md:hidden text-2xl">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 right-0 h-100 w-64 bg-gray-200 p-6 transform translate-x-full transition duration-300 z-50"
+      >
+        <div
+          class="text-right text-3xl cursor-pointer mb-6"
+          onclick="closeMenu()"
+        >
+          ×
+        </div>
+        <nav class="flex flex-col gap-6 text-lg font-medium">
+          <a href="index.html" onclick="closeMenu()">Home</a>
+          <a href="about.html" onclick="closeMenu()">About</a>
+          <a href="admission.html" onclick="closeMenu()">Admission</a>
+          <a href="academic.html" onclick="closeMenu()">Academic</a>
+          <a href="facility.html" onclick="closeMenu()">Facility</a>
+          <a href="mandatory-disclosure.html" onclick="closeMenu()"
+            >Mandatory Disclosure</a
+          >
+          <a href="gallery.html" onclick="closeMenu()">Gallery</a>
+          <a href="contact.html" onclick="closeMenu()">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Overlay -->
+      <div
+        id="overlay"
+        class="fixed inset-0 bg-black/40 hidden"
+        onclick="closeMenu()"
+      ></div>
+    </header>
+  </body>
+</html>

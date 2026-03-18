@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVM International School</title>
+    <link
+      rel="icon"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <div id="header"></div>
+    <main class="w-full">
+      <!-- HERO SECTION -->
+      <section
+        class="relative h-[350px] flex items-center justify-center text-white"
+      >
+        <img
+          src="assets/images/contact-banner.jpg"
+          class="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <div class="relative text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-3">Get In Touch</h1>
+          <p class="text-gray-200">We would love to hear from you</p>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-3 gap-10">
+          <!-- LEFT INFO PANEL -->
+          <div
+            class="lg:col-span-1 bg-blue-700 text-white p-8 rounded-2xl shadow-xl"
+          >
+            <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+
+            <div class="space-y-6 text-sm">
+              <div class="flex items-start gap-4">
+                <i class="fa-solid fa-location-dot text-xl"></i>
+                <div>
+                  <p class="font-semibold">Address</p>
+                  <p>Kailashchandrapur, Budhikhamri, Mayurbhanj, Odisha-757001</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <i class="fa-solid fa-phone text-xl"></i>
+                <div>
+                  <p class="font-semibold">Phone</p>
+                  <p>+91 9807546446</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <i class="fa-solid fa-envelope text-xl"></i>
+                <div>
+                  <p class="font-semibold">Email</p>
+                  <p>example@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <i class="fa-solid fa-clock text-xl"></i>
+                <div>
+                  <p class="font-semibold">Office Hours</p>
+                  <p>Mon - Sat : 8:00 AM - 4:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT FORM -->
+          <div class="lg:col-span-2 bg-white p-10 rounded-2xl shadow-xl">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8">
+              Send Us a Message
+            </h2>
+
+            <form class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="text-sm text-gray-600">Full Name</label>
+                <input
+                  type="text"
+                  class="w-full mt-2 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 outline-none"
+                />
+              </div>
+
+              <div>
+                <label class="text-sm text-gray-600">Email</label>
+                <input
+                  type="email"
+                  class="w-full mt-2 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 outline-none"
+                />
+              </div>
+
+              <div>
+                <label class="text-sm text-gray-600">Phone</label>
+                <input
+                  type="tel"
+                  class="w-full mt-2 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 outline-none"
+                />
+              </div>
+
+              <div>
+                <label class="text-sm text-gray-600">Subject</label>
+                <input
+                  type="text"
+                  class="w-full mt-2 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 outline-none"
+                />
+              </div>
+
+              <div class="md:col-span-2">
+                <label class="text-sm text-gray-600">Message</label>
+                <textarea
+                  rows="5"
+                  class="w-full mt-2 px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-600 outline-none"
+                ></textarea>
+              </div>
+
+              <div class="md:col-span-2">
+                <button
+                  type="submit"
+                  class="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 rounded-lg transition"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- GOOGLE MAP FULL WIDTH -->
+      <section>
+        <!-- <iframe
+          class="w-full h-[350px]"
+          src="https://www.google.com/maps/embed?pb=!1m18..."
+          loading="lazy"
+        >
+        </iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59226.60698104215!2d86.70242303805091!3d21.90905170604856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1dad005256a86d%3A0x2a1d2fb6f6b905a0!2sSai%20Vidya%20Mandir%20Kailashchandrapur%2CSvm%20Main%20Campus!5e0!3m2!1sen!2sin!4v1773640570083!5m2!1sen!2sin" class="w-full h-[350px]" loading="lazy"></iframe>
+      </section>
+    </main>
+    <!-- footer -->
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
